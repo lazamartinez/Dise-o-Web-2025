@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Yerbal Don Henker - Yerba mate artesanal desde Apóstoles, Misiones" />
+  <meta name="author" content="Grupo A - Proyecto HTML5" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yerbal Don Henker</title>
+  <style>
+    body {
+      position: relative;
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", sans-serif;
+      min-height: 100vh;
+      overflow-x: hidden;
+      background-color: #f8f8f5;
+      color: #2e3a1c;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-image: url("https://www.infocampo.com.ar/wp-content/uploads/2017/04/yerba-mate.jpg");
+      background-size: cover;
+      background-position: center;
+      opacity: 0.15;
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+  <header style="position: relative; background-image: url('https://inym.org.ar/imagenes/archivos/noticias/78912_imagen.jpg'); background-size: cover; background-position: center; padding: 60px 30px; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); overflow: hidden;">
+    <div style="position: absolute; top: 0; left: 0; height: 100%; width: 100%; background-color: rgba(62, 82, 41, 0.75); z-index: 0;"></div>
+    <div style="display: flex; align-items: center; z-index: 1;">
+      <img src="https://inym.org.ar/imagenes/archivos/noticias/78912_imagen.jpg" alt="Hoja de Yerba Mate" style="height: 350px; width: auto; border-radius: 10%; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); transition: transform 0.3s ease; margin-right: 20px;" title="Logo de Yerbal Familia Henker" />
+      <h1 style="margin: 0; color: #fff; font-size: 76px; font-family: 'Segoe UI', sans-serif; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); text-align: center;">Yerbal Don Henker</h1>
+    </div>
+  </header>
+
+  <main style="padding: 30px 20px; line-height: 1.6">
+    <nav style="background: linear-gradient(90deg, #8e9a2f, #3e5229); border-radius: 20px; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); position: sticky; top: 0; z-index: 1000;">
+      <div>
+        <a href="#historia" style="margin: 0 15px; color: #f5f5dc; text-decoration: none; font-weight: bold; font-size: 20px; display: inline-flex; align-items: center">
+          <img src="https://img.icons8.com/ios/50/ffffff/book.png" alt="Historia" style="width: 20px; margin-right: 8px" /> Historia
+        </a>
+        <a href="#productos" style="margin: 0 15px; color: #f5f5dc; text-decoration: none; font-weight: bold; font-size: 20px; display: inline-flex; align-items: center">
+          <img src="https://img.icons8.com/ios/50/ffffff/shopping-cart.png" alt="Productos" style="width: 20px; margin-right: 8px" /> Productos
+        </a>
+        <a href="#contacto" style="margin: 0 15px; color: #f5f5dc; text-decoration: none; font-weight: bold; font-size: 20px; display: inline-flex; align-items: center">
+          <img src="https://img.icons8.com/ios/50/ffffff/phone.png" alt="Contacto" style="width: 20px; margin-right: 8px" /> Contacto
+        </a>
+      </div>
+      <div style="display: flex; align-items: center; gap: 25px">
+        <a href="#carrito" style="color: #f5f5dc; position: relative; text-decoration: none" title="Carrito">
+          <img src="https://img.icons8.com/ios-filled/32/ffffff/shopping-cart.png" alt="Carrito" />
+          <span style="position: absolute; top: -6px; right: -10px; background-color: red; color: white; font-size: 12px; font-weight: bold; border-radius: 50%; padding: 2px 6px;" id="contador-carrito">0</span>
+        </a>
+        <a href="#usuario" style="color: #f5f5dc; text-decoration: none" title="Mi Cuenta">
+          <img src="https://img.icons8.com/ios-filled/32/ffffff/user-male-circle.png" alt="Usuario" />
+        </a>
+      </div>
+    </nav>
+
+    <section id="historia" style="background-color: #f4f8e8; opacity: 0.75; padding: 40px 20px; border-radius: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); margin-bottom: 40px;">
+      <h2 style="font-size: 45px; color: transparent; background-image: linear-gradient(90deg, #8e9a2f, #3e5229); background-clip: text; text-align: center; font-family: 'Segoe UI', sans-serif; margin-bottom: 25px;">Bienvenidos a nuestra web</h2>
+      <h2 style="font-size: 36px; color: transparent; background-image: linear-gradient(90deg, #8e9a2f, #3e5229); background-clip: text; text-align: center; font-family: 'Segoe UI', sans-serif; margin-bottom: 20px;">Nuestra Historia</h2>
+      <article style="font-size: 18px; color: #555; line-height: 1.6; text-align: justify; max-width: 800px; margin: 0 auto;">
+        <p>Desde el corazón de Apóstoles, capital nacional de la yerba mate, <strong>Yerbal Don Henker</strong> nace como un emprendimiento familiar dedicado a producir yerba mate con respeto por la tradición y la tierra misionera.</p>
+        <p>Nuestra cosecha es manual y respetuosa con el monte nativo misionero, ofreciendo un producto natural, intenso y auténtico.</p>
+      </article>
+    </section>
+
+    <section id="productos" style="background-color: #f9f9f9; padding: 50px 20px; border-radius: 20px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); margin-bottom: 40px">
+        <h2 style="font-size: 36px; color: #3e5229; text-align: center; margin-bottom: 20px; font-family: 'Segoe UI', sans-serif">
+          Nuestros Productos
+        </h2>
+      
+        <p style="font-size: 18px; color: #555; text-align: center; max-width: 800px; margin: 0 auto 40px; line-height: 1.6">
+          En <strong>Yerbal Don Henker</strong> elaboramos yerba mate 100% misionera, con sabores tradicionales y combinaciones naturales. Disfrutá una experiencia auténtica en cada mate.
+        </p>
+      
+        <!-- Tarjetas de productos -->
+        <div style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center">
+          <!-- Producto 1 -->
+          <div style="flex: 1 1 280px; background-color: #fff; padding: 20px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); text-align: center">
+            <h3 style="color: #3e5229">🧉 Mate Tradicional</h3>
+            <p style="color: #666">Sabor fuerte y clásico, ideal para el mate diario.</p>
+            <p><strong>Formato:</strong> 1 kg</p>
+            <p><strong>Precio:</strong> $2.800</p>
+            <button style="background-color: #3e5229; color: white; border: none; padding: 10px 20px; border-radius: 25px; font-size: 16px; cursor: pointer; transition: 0.3s;">Agregar al carrito</button>
+          </div>
+      
+          <!-- Producto 2 -->
+          <div style="flex: 1 1 280px; background-color: #fff; padding: 20px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); text-align: center">
+            <h3 style="color: #3e5229">🌿 Mate con Hierbas</h3>
+            <p style="color: #666">Con menta, cedrón y peperina. Refrescante y aromática.</p>
+            <p><strong>Formato:</strong> 500 g</p>
+            <p><strong>Precio:</strong> $1.800</p>
+            <button style="background-color: #3e5229; color: white; border: none; padding: 10px 20px; border-radius: 25px; font-size: 16px; cursor: pointer; transition: 0.3s;">Agregar al carrito</button>
+          </div>
+      
+          <!-- Producto 3 -->
+          <div style="flex: 1 1 280px; background-color: #fff; padding: 20px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); text-align: center">
+            <h3 style="color: #3e5229">💎 Sin Palo Premium</h3>
+            <p style="color: #666">Mayor concentración de hoja, sabor más suave y duradero.</p>
+            <p><strong>Formato:</strong> 1 kg</p>
+            <p><strong>Precio:</strong> $3.200</p>
+            <button style="background-color: #3e5229; color: white; border: none; padding: 10px 20px; border-radius: 25px; font-size: 16px; cursor: pointer; transition: 0.3s;">Agregar al carrito</button>
+          </div>
+      
+          <!-- Producto 4 -->
+          <div style="flex: 1 1 280px; background-color: #fff; padding: 20px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); text-align: center">
+            <h3 style="color: #3e5229">🔥 Yerba ahumada</h3>
+            <p style="color: #666">Secado artesanal con humo natural. Aroma intenso y rústico.</p>
+            <p><strong>Formato:</strong> 500 g</p>
+            <p><strong>Precio:</strong> $2.000</p>
+            <button style="background-color: #3e5229; color: white; border: none; padding: 10px 20px; border-radius: 25px; font-size: 16px; cursor: pointer; transition: 0.3s;">Agregar al carrito</button>
+          </div>
+      
+          <!-- Producto 5 -->
+          <div style="flex: 1 1 280px; background-color: #fff; padding: 20px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); text-align: center">
+            <h3 style="color: #3e5229">✨ Yerba con frutas</h3>
+            <p style="color: #666">Combinación de yerba con cáscara de naranja y pétalos.</p>
+            <p><strong>Formato:</strong> 500 g</p>
+            <p><strong>Precio:</strong> $2.200</p>
+            <button style="background-color: #3e5229; color: white; border: none; padding: 10px 20px; border-radius: 25px; font-size: 16px; cursor: pointer; transition: 0.3s;">Agregar al carrito</button>
+          </div>
+        </div>
+      </section>
+
+      <aside style="background-color: #eef5d8; border-left: 8px solid #8e9a2f; padding: 25px 20px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); max-width: 400px; margin: 0 auto 50px; font-family: 'Segoe UI', sans-serif;">
+        <h3 style="font-size: 24px; color: #3e5229; margin-bottom: 15px; display: flex; align-items: center;">
+          <img src="https://img.icons8.com/ios-filled/24/8e9a2f/info.png" alt="Info" style="margin-right: 10px;" />
+          ¿Sabías que...?
+        </h3>
+        <p style="font-size: 16px; color: #444; line-height: 1.6; text-align: justify;">
+          Apóstoles es conocida como la <strong>capital nacional de la yerba mate</strong>. Cada año se celebra una fiesta tradicional que rinde homenaje a esta noble planta y sus productores.
+        </p>
+      </aside>
+
+      <section id="produccion" style="padding: 30px; background-color: #f9f9f9;">
+        <h2 style="color: #3e5229;">Nuestra Producción</h2>
+        <p>En Yerbal Don Henker seguimos procesos tradicionales y sostenibles.</p>
+      
+        <table border="1" cellspacing="0" cellpadding="10" style="width: 100%; border-collapse: collapse; margin-top: 20px;">
+          <thead style="background-color: #dce7be;">
+            <tr>
+              <th>Etapa</th>
+              <th>Descripción</th>
+              <th>Duración estimada</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Cosecha</td>
+              <td>Recolección manual de las hojas de yerba mate.</td>
+              <td>3 semanas</td>
+            </tr>
+            <tr>
+              <td>Secado</td>
+              <td>Deshidratación con calor natural y controlado.</td>
+              <td>1 semana</td>
+            </tr>
+            <tr>
+              <td>Estacionamiento</td>
+              <td>Reposo en bolsas porosos para madurar su sabor.</td>
+              <td>12 meses</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      
+  </main>
+
+  <footer style="text-align: center; padding: 20px; background-color: #3e5229; color: #fff; font-family: 'Segoe UI', sans-serif;">
+    &copy; 2025 Yerbal Don Henker - Todos los derechos reservados - Grupo A
+  </footer>
+</body>
+</html>
